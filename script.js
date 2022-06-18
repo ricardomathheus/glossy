@@ -7,6 +7,8 @@ const productsList = [
             alt: ''
         },
 
+        price: '$127,99',
+
         description: 
         `
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum, quam animi eaque debitis
@@ -20,6 +22,8 @@ const productsList = [
             src: 'products/camisa.jpg',
             alt: ''
         },
+
+        price: '$127,99',
 
         description:
         `
@@ -47,24 +51,14 @@ function addProducts(product) {
     )
 }
 
-function LoadProducts() {
-    productsList.forEach(element => {
-        productsConteiner.innerHTML += 
-        `
-        <div>
-            <img src="${element.img.src}" alt="${element.img.alt}">
-            <p>${element.description}</p>
-        </div>
-        `
-    })
-}
-
 function addTemplateProducts(numberOfProducts) {
     const product = {
         img: {
             src: 'products/camisa.jpg',
             alt: ''
         },
+        
+        price: '$127,99',
 
         description: 
         `
@@ -81,6 +75,18 @@ function addTemplateProducts(numberOfProducts) {
     }
 }
 
+function LoadProducts() {
+    productsList.forEach(element => {
+        productsConteiner.innerHTML += 
+        `
+        <div>
+            <img src="${element.img.src}" alt="${element.img.alt}">
+            <span class="price">${element.price}</span>
+            <p>${element.description}</p>
+        </div>
+        `
+    })
+}
 
 addTemplateProducts(5)
 LoadProducts()
