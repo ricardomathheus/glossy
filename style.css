@@ -4,7 +4,7 @@
 }
 
 :root{
-    --light-color: #efefef
+    --light-color: #efefef;
 }
 
 header {
@@ -53,7 +53,7 @@ nav #hamburguer + label {
     margin-bottom: 0px;
     width: 2rem;
     height: 2rem;
-    background-color: #efefef;
+    background-color: var(--light-color);
     border-radius: 5px;
 
 }

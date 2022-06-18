@@ -33,17 +33,6 @@ const productsList = [
         `
     }
 ]
-/*
-modelo:
-    {
-        img: {
-            hrf: '',
-            alt: ''
-        }
-
-        description: ''
-    }
-*/
 
 function addProducts(product) {
     productsList.push(
